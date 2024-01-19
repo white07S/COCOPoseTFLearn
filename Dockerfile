@@ -33,6 +33,9 @@ RUN chmod +x ./scripts/download_dataset.sh && ./scripts/download_dataset.sh
 # Copy the training directory into the container
 COPY training/ ./training
 
+# Set PYTHONPATH to avoid circular import issues
+ENV PYTHONPATH "${PYTHONPATH}:/usr/src/app"
+
 # Set the default command to execute
 # when creating a new container with this image
 CMD ["conda", "run", "-n", "cv", "python", "training/train_pose.py"]
