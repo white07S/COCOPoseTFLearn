@@ -6,4 +6,4 @@ pandas
 Pillow
 pycocotools
 scipy
-tensorpack
+tensorpack==0.7.1
