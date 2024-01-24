@@ -8,7 +8,7 @@ from process_image import process_image
 import visualize_parts  # Correct the spelling if it's different
 
 def main():
-    st.title('Pose Estimation App')
+    st.title('Pose Estimation1 App')
 
     # Load model
     model = cmu_model.get_testing_model()

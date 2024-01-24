@@ -25,7 +25,7 @@ weight_decay = 5e-4
 lr_policy =  "step"
 gamma = 0.333
 stepsize = 136106 #68053   // after each stepsize iterations update learning rate: lr=lr*gamma
-max_iter = 200000 # 600000
+max_iter = 1 # epoch just to initally train for one epoch
 
 weights_best_file = "weights.best.h5"
 training_log = "training.csv"
