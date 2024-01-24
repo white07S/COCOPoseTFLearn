@@ -50,3 +50,45 @@ Follow these steps to set up the project environment:
 8. **TensorBoard and Model Visualization:**
    During the training, a popup will prompt you to open TensorBoard in Visual Studio Code and provide an option to download PNGs of the model.
 
+
+Certainly! I'll create a README document for your GUI application which involves installing Streamlit, running the Streamlit app, and using buttons to process an image, visualize body parts, and link points. You can add the image links later as needed.
+
+---
+
+# GUI Application Using Streamlit
+
+This document provides instructions on how to set up and run the GUI version of our application, which is built using Streamlit. The GUI includes functionalities such as image processing, visualization of body parts, and linking points on the image.
+
+
+## Running the Application
+
+1. **Navigate to the Application Directory**: Change your directory to where the application is located:
+
+   ```bash
+   cd COCOPoseTFLearn
+   ```
+
+2. **Start the Streamlit App**: Run the following command to start the Streamlit app:
+
+   ```bash
+   streamlit run gui/streamlit_app.py
+   ```
+
+3. **Using the GUI**:
+   
+   - **Drop Image**: On the application interface, use the provided option to upload or drop your image for processing.
+
+     ![Drop Image](resources/image.png)
+   
+   - **Process Image**: Click on the 'Process Image' button to start the image processing.
+
+     ![Process Image Button](resources/image-3.png)
+
+   - **Visualize Body Parts**: After processing, use the 'Visualize Body Parts' button to see the body parts visualization.
+
+     ![Visualize Body Parts Button](resources/image-4.png)
+
+   - **Link Points**: Finally, use the 'Link Points' button to connect points on the processed image.
+
+     ![Link Points Button](resources/image-5.png)
+
